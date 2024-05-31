@@ -1,0 +1,430 @@
+builds:
+- build_id: 78b29982-b27e-4f43-9f00-1ff9a40569cc
+  build_run: be67e52b-8da1-4f98-a4e3-6371c385b8fb
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    definitions:
+    - args:
+      - annotations: []
+        default: 10
+        description: The number of iterations, by default 10
+        key: n
+        kind: INT
+        label: n
+        nullable: true
+        scope: GLOBAL
+      - annotations: []
+        default: 2
+        description: The timeout, by default 2
+        key: timeout
+        kind: INT
+        label: timeout
+        nullable: true
+        scope: GLOBAL
+      collections: []
+      description: This function generates {{n}} strings with a {{timeout}} ms timeout
+        between each string
+      interfaces: []
+      kind: GENERATOR
+      name: Generate N Strings
+      portGroups: []
+      returns:
+      - annotations: []
+        description: A string with Hello {n}
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    - args:
+      - annotations: []
+        description: The input string
+        key: hello
+        kind: STRING
+        label: hello
+        nullable: false
+        scope: GLOBAL
+      collections: []
+      description: This function appends world to the input string
+      interfaces: []
+      kind: FUNCTION
+      name: Append World
+      portGroups: []
+      returns:
+      - annotations: []
+        description: '{{hello}} World'
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    - args:
+      - annotations: []
+        description: 'The input string
+
+
+          Returns'
+        key: input
+        kind: STRING
+        label: input
+        nullable: false
+        scope: GLOBAL
+      collections: []
+      description: 'This function prints the input string to
+
+        the console'
+      interfaces: []
+      kind: FUNCTION
+      name: Print String
+      portGroups: []
+      returns:
+      - annotations: []
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    size: 1723242904
+  manifest:
+    author: Alexander Wilhelmi
+    entrypoint: app
+    identifier: multi_quickPIV-arkitekt
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+- build_id: 8fbdcaee-63d5-47e7-a238-853fdcd0a648
+  build_run: 3a9757e1-f51e-4a64-946f-251f92086ca0
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    definitions:
+    - args:
+      - annotations: []
+        default: 10
+        description: The number of iterations, by default 10
+        key: n
+        kind: INT
+        label: n
+        nullable: true
+        scope: GLOBAL
+      - annotations: []
+        default: 2
+        description: The timeout, by default 2
+        key: timeout
+        kind: INT
+        label: timeout
+        nullable: true
+        scope: GLOBAL
+      collections: []
+      description: This function generates {{n}} strings with a {{timeout}} ms timeout
+        between each string
+      interfaces: []
+      kind: GENERATOR
+      name: Generate N Strings
+      portGroups: []
+      returns:
+      - annotations: []
+        description: A string with Hello {n}
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    - args:
+      - annotations: []
+        description: The input string
+        key: hello
+        kind: STRING
+        label: hello
+        nullable: false
+        scope: GLOBAL
+      collections: []
+      description: This function appends world to the input string
+      interfaces: []
+      kind: FUNCTION
+      name: Append World
+      portGroups: []
+      returns:
+      - annotations: []
+        description: '{{hello}} World'
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    - args:
+      - annotations: []
+        description: 'The input string
+
+
+          Returns'
+        key: input
+        kind: STRING
+        label: input
+        nullable: false
+        scope: GLOBAL
+      collections: []
+      description: 'This function prints the input string to
+
+        the console'
+      interfaces: []
+      kind: FUNCTION
+      name: Print String
+      portGroups: []
+      returns:
+      - annotations: []
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    size: 2458949900
+  manifest:
+    author: Alexander Wilhelmi
+    entrypoint: app
+    identifier: multi_quickPIV-arkitekt
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+- build_id: 6c3f9dff-8bf8-4b97-bc50-a23a3c3bd574
+  build_run: c7f6c1a1-7977-4e61-9731-1183eefd5c3e
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    definitions:
+    - args: []
+      collections: []
+      description: No Description
+      interfaces: []
+      kind: FUNCTION
+      name: This function appends world to the input string
+      portGroups: []
+      returns:
+      - annotations: []
+        description: Done
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    size: 2535169559
+  manifest:
+    author: Alexander Wilhelmi
+    entrypoint: app
+    identifier: multi_quickPIV-arkitekt
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+- build_id: 41fa2925-83d7-4dba-8880-7a6139e3ebd3
+  build_run: 9d8fe0e7-6ab0-4658-be4d-17db4a7d65ed
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    definitions:
+    - args: []
+      collections: []
+      description: No Description
+      interfaces: []
+      kind: FUNCTION
+      name: This function appends world to the input string
+      portGroups: []
+      returns:
+      - annotations: []
+        description: Vectors
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    size: 2535170302
+  manifest:
+    author: Alexander Wilhelmi
+    entrypoint: app
+    identifier: multi_quickPIV-arkitekt
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+- build_id: 18662d36-eca1-48ad-8bae-d6704139e929
+  build_run: b213052f-d96d-43ec-8df8-c06f6c0f843b
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    definitions:
+    - args: []
+      collections: []
+      description: No Description
+      interfaces: []
+      kind: FUNCTION
+      name: This function appends world to the input string
+      portGroups: []
+      returns:
+      - annotations: []
+        description: Vectors
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    size: 2535171029
+  manifest:
+    author: Alexander Wilhelmi
+    entrypoint: app
+    identifier: multi_quickPIV-arkitekt
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+- build_id: ddf590ca-5846-47de-87ea-4b29dc4c5f5c
+  build_run: 61a2bc51-5b37-47d7-b0e9-f905e0b35918
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    definitions:
+    - args: []
+      collections: []
+      description: No Description
+      interfaces: []
+      kind: FUNCTION
+      name: This function appends world to the input string
+      portGroups: []
+      returns:
+      - annotations: []
+        description: Vectors
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    size: 2535171772
+  manifest:
+    author: Alexander Wilhelmi
+    entrypoint: app
+    identifier: multi_quickPIV-arkitekt
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+- build_id: 75a602b6-b7af-4855-8642-5265e70d6525
+  build_run: 6c217669-07eb-48d3-9d85-2d8b1302e848
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    definitions:
+    - args: []
+      collections: []
+      description: No Description
+      interfaces: []
+      kind: FUNCTION
+      name: This function appends world to the input string
+      portGroups: []
+      returns:
+      - annotations: []
+        description: Vectors
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    - args: []
+      collections: []
+      description: No Description
+      interfaces: []
+      kind: FUNCTION
+      name: This function appends world to the input string
+      portGroups: []
+      returns:
+      - annotations: []
+        description: Vectors
+        key: return0
+        kind: STRING
+        nullable: false
+        scope: GLOBAL
+    size: 2535173110
+  manifest:
+    author: Alexander Wilhelmi
+    entrypoint: app
+    identifier: multi_quickPIV-arkitekt
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+- build_id: 6f1cce39-4a19-4e36-8b95-0f345a9b1fda
+  build_run: 22492643-cc30-419c-929e-b5785b5606df
+  description: This is a vanilla flavour
+  flavour: vanilla
+  inspection:
+    definitions:
+    - args:
+      - assignWidget:
+          kind: SearchWidget
+          query: "query search_representation($search: String, $values: [ID]) {\n\
+            \  options: representations(name: $search, limit: 20, ids: $values) {\n\
+            \    value: id\n    label: name\n  }\n}"
+          ward: mikro
+        identifier: '@mikro/representation'
+        key: image1
+        kind: STRUCTURE
+        nullable: false
+        scope: GLOBAL
+      - assignWidget:
+          kind: SearchWidget
+          query: "query search_representation($search: String, $values: [ID]) {\n\
+            \  options: representations(name: $search, limit: 20, ids: $values) {\n\
+            \    value: id\n    label: name\n  }\n}"
+          ward: mikro
+        identifier: '@mikro/representation'
+        key: image2
+        kind: STRUCTURE
+        nullable: false
+        scope: GLOBAL
+      collections: []
+      description: No Description
+      interfaces: []
+      kind: FUNCTION
+      name: This function appends world to the input string
+      portGroups: []
+      returns:
+      - assignWidget:
+          kind: SearchWidget
+          query: "query search_representation($search: String, $values: [ID]) {\n\
+            \  options: representations(name: $search, limit: 20, ids: $values) {\n\
+            \    value: id\n    label: name\n  }\n}"
+          ward: mikro
+        description: Vectors
+        identifier: '@mikro/representation'
+        key: return0
+        kind: STRUCTURE
+        nullable: false
+        scope: GLOBAL
+    - args: []
+      collections: []
+      description: No Description
+      interfaces: []
+      kind: FUNCTION
+      name: This function appends world to the input string
+      portGroups: []
+      returns:
+      - assignWidget:
+          kind: SearchWidget
+          query: "query search_representation($search: String, $values: [ID]) {\n\
+            \  options: representations(name: $search, limit: 20, ids: $values) {\n\
+            \    value: id\n    label: name\n  }\n}"
+          ward: mikro
+        description: Vectors
+        identifier: '@mikro/representation'
+        key: return0
+        kind: STRUCTURE
+        nullable: false
+        scope: GLOBAL
+    size: 2628660117
+  manifest:
+    author: Alexander Wilhelmi
+    entrypoint: app
+    identifier: multi_quickPIV-arkitekt
+    requirements: []
+    scopes:
+    - read
+    version: 0.0.1
+  selectors: []
+latest_build_run: 22492643-cc30-419c-929e-b5785b5606df

@@ -1,0 +1,7 @@
+author: Alexander Wilhelmi
+entrypoint: app
+identifier: multi_quickPIV-arkitekt
+requirements: []
+scopes:
+- read
+version: 0.0.1
