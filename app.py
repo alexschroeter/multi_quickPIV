@@ -64,8 +64,9 @@ def multi_quickPIV(image1 : RepresentationFragment,
 
     # run PIV
     jl.seval("using multi_quickPIV")
-    pivparams = jl.multi_quickPIV.setPIVParameters( interSize=jl.Array(interSize), searchMargin=jl.Array(searchMargin), step=jl.Array(step), threshold=jl.Array(threshold) )
-    VF, SN = jl.multi_quickPIV.PIV( jl.Array(img1), jl.Array(img2), pivparams )
+    #pivparams = jl.multi_quickPIV.setPIVParameters( interSize=jl.Array(interSize), searchMargin=jl.Array(searchMargin), step=jl.Array(step), threshold=jl.Array(threshold) )
+    # VF, SN = jl.multi_quickPIV.PIV( jl.Array(img1), jl.Array(img2), pivparams )
+    VF, SN = jl.multi_quickPIV.PIV( jl.Array(img1), jl.Array(img2))
 
     # to vizualize the results we need to manipulte the data
     np_u = np.array(VF)[0]
@@ -73,8 +74,10 @@ def multi_quickPIV(image1 : RepresentationFragment,
     vfsize = np_u.shape
 
     # Creating the x and y coordinates for the quiver plot
-    step   = np.array(jl.multi_quickPIV._step( pivparams )[1:2])
-    isize  = np.array(jl.multi_quickPIV._isize( pivparams )[1:2])
+    # step   = np.array(jl.multi_quickPIV._step( pivparams )[1:2])
+    step   = (32, 32)
+    # isize  = np.array(jl.multi_quickPIV._isize( pivparams )[1:2])
+    isize  = (32, 32)
     xgrid = np.array([ (x)*step[1] + isize[1]//2 for y in range(vfsize[0]) for x in range(vfsize[1]) ]).reshape(vfsize)
     ygrid = np.array([ (y)*step[0] + isize[0]//2 for y in range(vfsize[0]) for x in range(vfsize[1]) ]).reshape(vfsize)
 
