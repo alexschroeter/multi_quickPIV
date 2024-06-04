@@ -18,11 +18,11 @@ class PIVResult:
 @register
 def multi_quickPIV(image1 : RepresentationFragment,
                    image2 : RepresentationFragment,
-                   step = (32,32,32),
-                   interSize = (32,32,32),
-                   searchMargin = (10,10,10),
-                   threshold = (1000),
-                   ) -> ImageFile:
+                #    step = (32,32,32),
+                #    interSize = (32,32,32),
+                #    searchMargin = (10,10,10),
+                #    threshold = (1000),
+                   ):
     """
     This function performs a multithreaded Particle Image Velocimitry (PIV) on two images.
     The results are returned in form of a displacment vector for each interrogation window.
@@ -56,8 +56,8 @@ def multi_quickPIV(image1 : RepresentationFragment,
     
 
     # load the data of image1 and image2 and convert it to numpy array
-    img1 = image1.data.sel(c=0, t=0).transpose(*"zxy").data.compute()
-    img2 = image2.data.sel(c=0, t=0).transpose(*"zxy").data.compute()
+    img1 = image1.data.sel(c=0, t=0).data.compute()
+    img2 = image2.data.sel(c=0, t=0).data.compute()
     # for testing purposes we could also generate random data
     # img1 = np.random.rand(100, 100)
     # img2 = np.random.rand(100, 100)    
@@ -99,8 +99,6 @@ def multi_quickPIV(image1 : RepresentationFragment,
     plt.quiver(xgrid, ygrid, np_v, np_u * -1, color="red", scale=50)
     plt.savefig("plot.png")
 
-    file = open("plot.png")
-    return file
 
 @register
 def plotPIV(PIVResult : PIVResult,
